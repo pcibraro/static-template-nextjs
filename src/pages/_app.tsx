@@ -11,69 +11,70 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {/* HTML Meta Tags */}
-        <title>Collected Notes</title>
+        <title>Cibrax's notes</title>
         <meta
           name="description"
-          content="The simplest, and most powerful note-taking blogging platform."
+          content="This is my personal site about software development, security and other stuffs"
         />
         <meta
           name="image"
-          content="https://photos.collectednotes.com/embed.png"
+          content="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
         />
-        <meta name="keywords" content="notes, blog, note taking, simplicity." />
+        <meta name="keywords" content="notes, blog, note taking, simplicity, security, oauth, auth0, azuread." />
 
         {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Collected Notes" />
+        <meta itemProp="name" content="Pablo Cibraro" />
+        <meta itemProp="name" content="Cibrax" />
         <meta
           itemProp="description"
-          content="The simplest, and most powerful note-taking blogging platform."
+          content="My personal site about software development, security and other stuff"
         />
         <meta
           itemProp="image"
-          content="https://photos.collectednotes.com/embed.png"
+          content="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
         />
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://collectednotes.com" />
+        <meta property="og:url" content="https://thecibrax.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Collected Notes" />
+        <meta property="og:title" content="Cibrax's Notes" />
         <meta
           property="og:description"
-          content="The simplest, and most powerful note-taking blogging platform."
+          content="My personal site about software development, security and other stuff"
         />
         <meta
           property="og:image"
-          content="https://photos.collectednotes.com/embed.png"
+          content="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
         />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Collected Notes" />
+        <meta name="twitter:title" content="Cibrax's notes" />
         <meta
           name="twitter:description"
-          content="The simplest, and most powerful note-taking blogging platform."
+          content="My personal site about software development, security and other stuff"
         />
         <meta
           name="twitter:image"
-          content="https://photos.collectednotes.com/embed.png"
+          content="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
         />
 
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="https://static.collectednotes.com/assets/apple-touch-icon-312a7df912cb436668614c4991fff0aab7481d6146f69cb40d9587a23b5867eb.png"
+          href="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="https://static.collectednotes.com/assets/favicon-32x32-830bcc50ba1db7a559cc9c92ffa6cf755a4e5b8c067bcfff1aea79f600950075.png"
+          href="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="https://static.collectednotes.com/assets/favicon-16x16-11f4353cc4034de36fd7fb85e09898924184fbc090fb7ae1cc4930f5845e4181.png"
+          href="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
         />
       </Head>
 

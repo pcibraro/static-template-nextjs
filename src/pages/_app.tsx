@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="image"
-          content="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
+          content="/public/img/perfil-grande.jpg"
         />
         <meta name="keywords" content="notes, blog, note taking, simplicity, security, oauth, auth0, azuread." />
 
@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           itemProp="image"
-          content="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
+          content="/public/img/perfil-grande.jpg"
         />
 
         {/* Facebook Meta Tags */}
@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
+          content="/public/img/perfil-apple.jpg"
         />
 
         {/* Twitter Meta Tags */}
@@ -56,25 +56,25 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="twitter:image"
-          content="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
+          content="/public/img/perfil-apple.jpg"
         />
 
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
+          href="/public/img/perfil-apple.jpg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
+          href="/public/img/perfil-icon-32x32.jpg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="https://media-exp1.licdn.com/dms/image/C5603AQFX519Sis-lNg/profile-displayphoto-shrink_800_800/0/1591966908817?e=1619049600&v=beta&t=ErZf3a2q5pNZON3R4P6DqEmDGIh848jSD0JWbZjMKts"
+          href="/public/img/perfil-icon-16x16.jpg"
         />
       </Head>
 

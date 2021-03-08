@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="image"
-          content="/public/img/perfil-grande.jpg"
+          content="/img/perfil-grande.jpg"
         />
         <meta name="keywords" content="notes, blog, note taking, simplicity, security, oauth, auth0, azuread." />
 
@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           itemProp="image"
-          content="/public/img/perfil-grande.jpg"
+          content="/img/perfil-grande.jpg"
         />
 
         {/* Facebook Meta Tags */}
@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           property="og:image"
-          content="/public/img/perfil-apple.jpg"
+          content="/img/perfil-apple.jpg"
         />
 
         {/* Twitter Meta Tags */}
@@ -56,25 +56,25 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="twitter:image"
-          content="/public/img/perfil-apple.jpg"
+          content="/img/perfil-apple.jpg"
         />
 
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/public/img/perfil-apple.jpg"
+          href="/img/perfil-apple.jpg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/public/img/perfil-icon-32x32.jpg"
+          href="/img/perfil-icon-32x32.jpg"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/public/img/perfil-icon-16x16.jpg"
+          href="/img/perfil-icon-16x16.jpg"
         />
       </Head>
 

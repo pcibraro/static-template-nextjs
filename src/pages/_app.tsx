@@ -47,18 +47,6 @@ export default function App({ Component, pageProps }) {
           content="/img/perfil-apple.jpg"
         />
 
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Cibrax's notes" />
-        <meta
-          name="twitter:description"
-          content="My personal site about software development, security and other stuff"
-        />
-        <meta
-          name="twitter:image"
-          content="/img/perfil-apple.jpg"
-        />
-
         <link
           rel="apple-touch-icon"
           sizes="180x180"

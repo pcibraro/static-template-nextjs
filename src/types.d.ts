@@ -12,3 +12,5 @@ export type ArticlePageQuery = { path: string[] };
 export type HomePageProps = { site: Site; notes: Note[] };
 
 export type SearchPageProps = { site: Site; }
+
+export type AboutProps = { site: Site; }

@@ -1,0 +1,19 @@
+.spinner {
+    @apply max-w-prose mx-auto px-10 flex justify-center pt-32;
+  }
+  
+  .article {
+    @apply max-w-screen-lg mx-auto px-10;
+  }
+  
+  .header {
+    @apply max-w-screen-lg mx-auto px-10;
+  
+    h1 {
+      @apply text-5xl font-bold max-w-screen-lg mx-auto px-10;;
+    }
+    p {
+      @apply text-xl leading-normal whitespace-pre-wrap;
+    }
+  }
+  

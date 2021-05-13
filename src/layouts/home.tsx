@@ -86,13 +86,13 @@ export function HomeLayout({ site, notes }: HomePageProps) {
       <Header name={site.name} headline={site.headline} />
 
       <nav className={styles.nav}>
-        <Link href="/search">
+        <Link href="/about">
           <a>
-            <FaSearch /> <span>Search</span>
+            <span>About</span>
           </a>
         </Link>
       </nav>
-
+      
       <section className={styles.section}>
         {notes.map((note) => (
           <NoteItem key={note.id} note={note} />

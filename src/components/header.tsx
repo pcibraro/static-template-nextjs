@@ -5,6 +5,8 @@ import { Note, site } from "collected-notes";
 import styles from "components/header.module.css";
 
 export function Header({ name, headline, note }: { name: string; headline: string; note: Note}) {
+  console.log(note);
+
   return (
     <>
       <Head>
@@ -26,6 +28,7 @@ export function Header({ name, headline, note }: { name: string; headline: strin
         {/* Google / Search Engine Tags */}
         <meta itemProp="name" content="Pablo Cibraro" />
         <meta itemProp="name" content={(note) ? note.title : name} />
+        
         <meta
           itemProp="description"
           content={(note) ? note.headline : headline}

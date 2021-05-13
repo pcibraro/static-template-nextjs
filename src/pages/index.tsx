@@ -6,11 +6,14 @@ import { HomeLayout } from "layouts/home";
 const cn = collectedNotes(process.env.CN_EMAIL, process.env.CN_TOKEN);
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
-  const { site, notes } = await cn.site(
-    process.env.CN_SITE_PATH,
-    1,
-    "public_site"
-  );
+  
+  const {site, notes} = (await (await fetch("https://collectednotes.com/" + process.env.CN_SITE_PATH, 
+  {
+     headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+     }
+  })).json());
 
   // fetch all pages
   if (notes.length < site.total_notes) {
@@ -19,7 +22,15 @@ export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
       (_, index) => index + 1
     )) {
       if (page === 1) continue;
-      const res = await cn.site(process.env.CN_SITE_PATH, page, "public_site");
+      
+      const res = (await (await fetch("https://collectednotes.com/" + process.env.CN_SITE_PATH, 
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      })).json());
+
       notes.push(...res.notes);
     }
   }

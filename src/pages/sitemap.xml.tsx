@@ -40,7 +40,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`);
 
         notes.forEach((note) => 
-            res.write("<url><loc>https://thecibrax.com/" + note.path + "</loc><lastmod>" + note.updated_at + "</lastmod></url>")
+            res.write("<url><loc>https://thecibrax.com/${" + note.path + "</loc><lastmod>" + note.updated_at + "</lastmod></url>")
         );
 
         res.write(`</urlset>`);

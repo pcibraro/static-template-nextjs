@@ -24,6 +24,7 @@ export function ArticleLayout({ note, site, body, links }: ArticlePageProps) {
   return (
     <>
       
+      
       <main role="document">
       
       <Header name={site.name} headline={site.headline} note={note} />

@@ -6,9 +6,8 @@ import styles from "components/header.module.css";
 
 export function Header({ name, headline, note }: { name: string; headline: string; note?: Note}) {
   
-  const domain = "https://thecibrax.com";
-  let today = new Date().toISOString().slice(0, 10);
-
+  const domain = process.env.CN_SITE_WWW || "https://thecibrax.com";
+  
   return (
     <>
       <Head>
@@ -97,7 +96,7 @@ export function Header({ name, headline, note }: { name: string; headline: strin
         <link rel="preload" href={(note) ? domain + "/img/perfil-apple.jpg" : domain} as="image"></link>
         <link href={domain + "/img/perfil-apple.jpg"} rel="image_src"></link>
         <meta name="twitter:image:src" content={domain + "/img/perfil-apple.jpg"}/>
-
+        
       </Head>
 
       <header className={styles.header}>

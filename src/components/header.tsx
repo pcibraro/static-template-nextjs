@@ -6,11 +6,16 @@ import styles from "components/header.module.css";
 
 export function Header({ name, headline, note }: { name: string; headline: string; note?: Note}) {
   
+  const domain = "https://thecibrax.com";
+  let today = new Date().toISOString().slice(0, 10);
+
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <meta name="Robots" content="all,index,follow,archive"/>
 
         {/* HTML Meta Tags */}
         <title>{(note) ? note.title : name}</title>
@@ -20,13 +25,15 @@ export function Header({ name, headline, note }: { name: string; headline: strin
         />
         <meta
           name="image"
-          content="/img/perfil-grande.jpg"
+          content={domain + "/img/perfil-grande.jpg"}
         />
         <meta name="keywords" content="notes, blog, note taking, simplicity, security, oauth, auth0, azuread." />
 
         {/* Google / Search Engine Tags */}
         <meta itemProp="name" content="Pablo Cibraro" />
         <meta itemProp="name" content={(note) ? note.title : name} />
+        <meta name="author" content="Pablo Cibraro"/>
+        {note && <meta name="publish_date" property="og:publish_date" content={note.created_at}/>}
 
         <meta
           itemProp="description"
@@ -34,55 +41,64 @@ export function Header({ name, headline, note }: { name: string; headline: strin
         />
         <meta
           itemProp="image"
-          content="/img/perfil-grande.jpg"
+          content={domain + "/img/perfil-grande.jpg"}
         />
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://thecibrax.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={(note) ? note.title : name} />
+        <meta property="og:url" content={domain} />
+        <meta property="og:type" content="blog" />
+        <meta property="og:title" content="thecibrax.com" />
+        <meta property="og:site_name" content="thecibrax.com" />
         <meta
           property="og:description"
-          content={(note) ? note.headline : headline}
+          content="notes and Rants about software development"
         />
         <meta
           property="og:image"
-          content="/img/perfil-apple.jpg"
+          content={domain + "/img/perfil-apple.jpg"}
         />
 
         {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@cibrax"/>
         <meta name="twitter:title" content={(note) ? note.title : name} />
-        <meta name="twitter:url" content={(note) ? "https://thecibrax.com/" + note.title : "https://thecibrax.com"} />
+        <meta name="twitter:creator" content="@cibrax"/>
+        <meta name="twitter:domain" content="thecibrax.com"/>
+        <meta name="twitter:widgets:csp" content="on"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:url" content={(note) ? domain + "/" + note.title : domain} />
         <meta
           name="twitter:description"
           content={(note) ? note.headline : headline}
         />
         <meta
           name="twitter:image"
-          content="/img/perfil-apple.jpg"
+          content={domain + "/img/perfil-apple.jpg"}
         />
         
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/img/perfil-apple.jpg"
+          href={domain + "/img/perfil-apple.jpg"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/img/perfil-icon-32x32.jpg"
+          href={domain + "/img/perfil-icon-32x32.jpg"}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/img/perfil-icon-16x16.jpg"
+          href={domain + "/img/perfil-icon-16x16.jpg"}
         />
-        {note && <link rel="canonical" href={"https://thecibrax.com/" + note.title}></link>}
-        {note && <link rel="amphtml" href={"https://thecibrax.com/" + note.title}></link>}
-        {note && <link rel="preload" href="/img/perfil-apple.jpg" as="image"></link>}
+        {note && <link rel="canonical" href={domain + "/" + note.title}></link>}
+        {note && <link rel="amphtml" href={domain + "/" + note.title}></link>}
+        <link rel="preload" href={domain + "/img/perfil-apple.jpg"} as="image"></link>
+        <link href={domain + "/img/perfil-apple.jpg"} rel="image_src"></link>
+        <meta name="twitter:image:src" content={domain + "/img/perfil-apple.jpg"}/>
+
       </Head>
 
       <header className={styles.header}>

@@ -44,7 +44,7 @@ export function Header({ name, headline, note }: { name: string; headline: strin
         />
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content={(note) ? domain + "/" + note.title : domain} />
+        <meta property="og:url" content={(note) ? domain + "/" + note.path : domain} />
         <meta property="og:type" content="blog" />
         <meta property="og:title" content={(note) ? note.title : name} />
         <meta property="og:site_name" content="thecibrax.com" />
@@ -65,7 +65,7 @@ export function Header({ name, headline, note }: { name: string; headline: strin
         <meta name="twitter:domain" content="thecibrax.com"/>
         <meta name="twitter:widgets:csp" content="on"/>
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:url" content={(note) ? domain + "/" + note.title : domain} />
+        <meta name="twitter:url" content={(note) ? domain + "/" + note.path : domain} />
         <meta
           name="twitter:description"
           content={(note) ? note.headline : headline}
@@ -92,8 +92,8 @@ export function Header({ name, headline, note }: { name: string; headline: strin
           sizes="16x16"
           href={domain + "/img/perfil-icon-16x16.jpg"}
         />
-        <link rel="canonical" href={(note) ? domain + "/" + note.title : domain}></link>
-        <link rel="amphtml" href={(note) ? domain + "/" + note.title : domain}></link>
+        <link rel="canonical" href={(note) ? domain + "/" + note.path : domain}></link>
+        <link rel="amphtml" href={(note) ? domain + "/" + note.path : domain}></link>
         <link rel="preload" href={(note) ? domain + "/img/perfil-apple.jpg" : domain} as="image"></link>
         <link href={domain + "/img/perfil-apple.jpg"} rel="image_src"></link>
         <meta name="twitter:image:src" content={domain + "/img/perfil-apple.jpg"}/>

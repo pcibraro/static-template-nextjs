@@ -30,7 +30,6 @@ export function Header({ name, headline, note }: { name: string; headline: strin
         <meta name="keywords" content="notes, blog, note taking, simplicity, security, oauth, auth0, azuread." />
 
         {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Pablo Cibraro" />
         <meta itemProp="name" content={(note) ? note.title : name} />
         <meta name="author" content="Pablo Cibraro"/>
         {note && <meta name="publish_date" property="og:publish_date" content={note.created_at}/>}
@@ -45,13 +44,13 @@ export function Header({ name, headline, note }: { name: string; headline: strin
         />
 
         {/* Facebook Meta Tags */}
-        <meta property="og:url" content={domain} />
+        <meta property="og:url" content={(note) ? domain + "/" + note.title : domain} />
         <meta property="og:type" content="blog" />
-        <meta property="og:title" content="thecibrax.com" />
+        <meta property="og:title" content={(note) ? note.title : name} />
         <meta property="og:site_name" content="thecibrax.com" />
         <meta
           property="og:description"
-          content="notes and Rants about software development"
+          content={(note) ? note.headline : headline}
         />
         <meta
           property="og:image"
@@ -93,9 +92,9 @@ export function Header({ name, headline, note }: { name: string; headline: strin
           sizes="16x16"
           href={domain + "/img/perfil-icon-16x16.jpg"}
         />
-        {note && <link rel="canonical" href={domain + "/" + note.title}></link>}
-        {note && <link rel="amphtml" href={domain + "/" + note.title}></link>}
-        <link rel="preload" href={domain + "/img/perfil-apple.jpg"} as="image"></link>
+        <link rel="canonical" href={(note) ? domain + "/" + note.title : domain}></link>
+        <link rel="amphtml" href={(note) ? domain + "/" + note.title : domain}></link>
+        <link rel="preload" href={(note) ? domain + "/img/perfil-apple.jpg" : domain} as="image"></link>
         <link href={domain + "/img/perfil-apple.jpg"} rel="image_src"></link>
         <meta name="twitter:image:src" content={domain + "/img/perfil-apple.jpg"}/>
 

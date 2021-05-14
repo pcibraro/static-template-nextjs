@@ -3,14 +3,12 @@
 }
 
 .nav {
-  @apply mb-6 max-w-screen-md mx-auto px-10 flex justify-end;
+  @apply mb-6 max-w-screen-md mx-auto;
 
   a {
-    @apply flex items-center text-lg font-semibold;
+    @apply text-lg font-semibold px-5;
 
-    span {
-      @apply ml-1;
-    }
+    
   }
 }
 

@@ -6,7 +6,6 @@ import { NoteItem } from "components/note-item";
 import Head from "next/head";
 
 import Link from "next/link";
-import { FaSearch } from "react-icons/fa";
 
 export function HomeLayout({ site, notes }: HomePageProps) {
   return (
@@ -18,6 +17,21 @@ export function HomeLayout({ site, notes }: HomePageProps) {
         <Link href="/about">
           <a>
             <span>About</span>
+          </a>
+        </Link>
+        <Link href="https://twitter.com/cibrax">
+          <a>
+            <span>Twitter</span>
+          </a>
+        </Link>
+        <Link href="https://www.linkedin.com/in/cibrax/">
+          <a>
+            <span>Linkedin</span>
+          </a>
+        </Link>
+        <Link href="https://github.com/pcibraro">
+          <a>
+            <span>Github</span>
           </a>
         </Link>
       </nav>
